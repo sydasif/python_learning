@@ -30,7 +30,7 @@ Python is a general-purpose interpreted, interactive, object-oriented, and high-
 4. String formatting
 5. Dictionaries & Tuples
 6. Managing enviroments
-7. Dunder method like __init__
+7. Dunder method like `__init__`
 
 ### Advanced
 
@@ -44,9 +44,5 @@ Python is a general-purpose interpreted, interactive, object-oriented, and high-
 ### Free Python Books
 
 [Think Python 2nd Edition by Allen B. Downey](https://greenteapress.com/wp/think-python-2e/)
-
-[Dive Into Python 3](https://diveintopython3.problemsolving.io/)
-
-[The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)
 
 [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
