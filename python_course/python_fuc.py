@@ -29,28 +29,38 @@ print(type(result))
 """When function is created, it does nothing yet. Actions listed in it will be executed only
 when you call function."""
 
-def config_intf(intf_name, ip, mask):
-    print('interface', intf_name)
+def config_int4(int4_name, ip, mask):
+    print('interface', int4_name)
     print('ip address', ip, mask)
 
 # calling a function
-result = config_intf("Fa0/0", "10.1.1.1", "255.255.255.0")
+result = config_int4("Fa0/0", "10.1.1.1", "255.255.255.0")
 print(result) # print None
 
-def config_intf(intf_name, ip, mask):
-    #config = "interface {}\nip address {} {}".format(intf_name, ip, mask)
-    config = f"interface {intf_name}\nip address {ip} {mask}"
+def config_int4(int4_name, ip, mask):
+    #config = "interface {}\nip address {} {}".format(int4_name, ip, mask)
+    config = f"interface {int4_name}\nip address {ip} {mask}"
     return config
 
-result = config_intf("Fa0/0", "10.1.1.2", "255.255.255.0")
+result = config_int4("Fa0/0", "10.1.1.2", "255.255.255.0")
 print(result)
 
-def config_intf(intf_name, ip, mask):
-    config_intf = f'interface {intf_name}\n'
+def config_int4(int4_name, ip, mask):
+    config_int4 = f'interface {int4_name}\n'
     config_ip = f'ip address {ip} {mask}'
-    return config_intf, config_ip
+    return config_int4, config_ip
 
-result = config_intf("Fa0/0", "10.1.1.3", "255.255.255.0")
+result = config_int4("Fa0/0", "10.1.1.2", "255.255.255.0")
+print(result)    
+
+def int4(name, ip, mask): 
+    interface = f"""
+    interface {name} 
+    ip address {ip} {mask} 
+    """ 
+    return interface 
+   
+result = int4("Fa0/0", "10.1.1.3", "255.255.255.0")
 print(result)
 
-print(type(result))
+#print(type(result))
